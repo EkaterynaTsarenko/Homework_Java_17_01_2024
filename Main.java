@@ -1,35 +1,26 @@
+import java.util.Scanner;
+
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String...args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        Celsious celsious = new Celsious();
+
+        System.out.println("Назовите ваше имя : ");
+        celsious.name = scanner.nextLine();
+        System.out.println("Ваше имя:" + celsious.name.toUpperCase());
+
+        System.out.println("Назовите число в градусах по Цельсию: ");
+        celsious.CelsiousDegree = scanner.nextInt();
+        System.out.println("Ваше число по цельсию равняется: " + celsious.CelsiousDegree);
+        System.out.println();
+        celsious.Farenheitresult();
 
 
-        // 0000 0000 - 8 бита
-        byte byteVar = 120;
 
-        // 0000 0000 0000 0000 - 16 бит
-        short shortVar = 80;
-        //Операция расширения
-        shortVar = byteVar;
 
-        //Операция сужения
-        byteVar = (byte)shortVar;
 
-        System.out.println(byteVar);
-
-        int intVar = 200;
-        long  longVar = 400;
-
-        longVar = intVar;
-        intVar = (int)longVar;
-
-        System.out.println(intVar);
-
-        float floatVar = 400;
-        double doubleVar = 500;
-
-        doubleVar = floatVar;
-        floatVar = (float)doubleVar;
-
-        System.out.println(floatVar);
 
 
 
